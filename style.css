@@ -1,0 +1,50 @@
+:root{--ink:#1d2327;--sub:#5b6770;--line:#dfe5e8;--accent:#1F6F8B;--bg:#ffffff;--soft:#f5f8f9}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",system-ui,sans-serif;line-height:1.85;font-size:16px}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(31,111,139,.3)}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header.site{border-top:4px solid var(--accent);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.brand{font-weight:700;letter-spacing:.04em;color:var(--ink);border:0;font-size:17px}
+.brand small{font-weight:400;color:var(--sub);margin-left:.6em;font-size:13px}
+nav a{font-size:14px;margin-left:18px;border:0;color:var(--sub)}
+nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+.hero p.kicker{margin:0 0 12px;color:var(--accent);font-size:13px;letter-spacing:.12em;font-weight:700}
+.hero h1{margin:0 0 18px;font-size:30px;line-height:1.45;letter-spacing:.02em}
+.hero p.lead{margin:0;color:var(--sub);font-size:16px}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+section h2{font-size:13px;letter-spacing:.14em;color:var(--accent);margin:0 0 20px;font-weight:700;text-transform:uppercase}
+h3{font-size:18px;margin:0 0 6px}
+p{margin:0 0 14px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--soft);border-radius:8px;padding:20px 22px}
+.card p{margin:0;color:var(--sub);font-size:15px}
+.person .name{font-size:20px;font-weight:700;margin:0}
+.person .role{color:var(--sub);font-size:14px;margin:0 0 14px}
+.links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:10px;font-size:15px}
+ul.plain{list-style:none;margin:0;padding:0}
+ul.plain li{padding:10px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:7.5em 1fr;gap:12px}
+ul.plain li:first-child{border-top:0}
+ul.plain .when{color:var(--sub);font-size:14px;font-variant-numeric:tabular-nums}
+table.profile{border-collapse:collapse;width:100%;font-size:15px}
+table.profile th,table.profile td{text-align:left;padding:10px 0;border-top:1px solid var(--line);vertical-align:top}
+table.profile tr:first-child th,table.profile tr:first-child td{border-top:0}
+table.profile th{width:9em;font-weight:400;color:var(--sub)}
+table.profile.wide th{width:14em}
+@media (max-width:600px){table.profile.wide th{width:9em}}
+.note{font-size:13px;color:var(--sub)}
+footer{padding:28px 0 40px;color:var(--sub);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer a{color:var(--sub);border:0}
+.todo{background:#fff4d6;padding:0 .25em;border-radius:3px}
+@media (max-width:600px){
+ .hero{padding:48px 0 40px}.hero h1{font-size:24px}
+ .cards{grid-template-columns:1fr}
+ nav a{margin-left:12px}
+ .brand small{display:none}
+ ul.plain li{grid-template-columns:1fr;gap:0}
+ table.profile th{width:7em}
+}
